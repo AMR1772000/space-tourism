@@ -26,9 +26,9 @@ const selectPlanet = (index) => {
 };
 onMounted(() => {
   axios
-    .get("http://localhost:3000/destinations")
+    .get("/public/Data/data.json")
     .then((response) => {
-      planets.value = response.data;
+      planets.value = response.data.destinations;
       if (planets.value.length > 0) {
         selectPlanet(0); // Select the first planet by default
       }

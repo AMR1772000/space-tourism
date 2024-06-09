@@ -19,9 +19,9 @@ const crew = ref([]);
 
 onMounted(() => {
   axios
-    .get("http://localhost:3000/crew")
+    .get("/public/Data/data.json")
     .then((response) => {
-      crew.value = response.data;
+      crew.value = response.data.crew;
     })
     .catch((error) => {
       console.error("Error Fetching crew dara: " + error);
