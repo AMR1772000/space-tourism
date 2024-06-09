@@ -4,7 +4,7 @@
     class="text-white flex items-center xs:flex-col xs:justify-center xs:gap-6 xs:mt-5"
   >
     <div class="w-[48%] xs:w-full xs:text-center xs:order-2 xs:px-3">
-      <P class="text-[#D0D6F9] text-lg xs:text-sm">THE TERMINOLOGY ...</P>
+      <p class="text-[#D0D6F9] text-lg xs:text-sm">THE TERMINOLOGY ...</p>
       <h1 class="text-[60px] tracking-widest xs:text-[35px] xs:mb-3 xs:mt-2">
         {{ technology.name }}
       </h1>
