@@ -26,7 +26,7 @@ const selectPlanet = (index) => {
 };
 onMounted(() => {
   axios
-    .get("/public/Data/data.json")
+    .get("/Data/data.json")
     .then((response) => {
       planets.value = response.data.destinations;
       if (planets.value.length > 0) {

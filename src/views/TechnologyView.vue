@@ -33,7 +33,7 @@ const selectTechnology = (idx) => {
 };
 onMounted(() => {
   axios
-    .get("/public/Data/data.json")
+    .get("/Data/data.json")
     .then((response) => {
       technologies.value = response.data.technology;
       if (technologies.value.length > 1) {

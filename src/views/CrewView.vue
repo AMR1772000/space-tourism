@@ -19,7 +19,7 @@ const crew = ref([]);
 
 onMounted(() => {
   axios
-    .get("/public/Data/data.json")
+    .get("/Data/data.json")
     .then((response) => {
       crew.value = response.data.crew;
     })
